@@ -5,4 +5,4 @@ machine:
     version: oraclejdk7
 test:
   override:
-    - java ./test/TestRunner.java
+    - java test/TestRunner.java
