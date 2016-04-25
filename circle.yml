@@ -5,9 +5,8 @@ machine:
     version: oraclejdk7
 test:
   pre:
-    - sudo apt-get update && sudo apt-get upgrade
     - sudo apt-get install junit
-    - java -cp .:/usr/share/java/junit-3.8.2.jar test/TestMathSome
+    - java -cp .:/usr/share/java/junit-3.8.2.jar test/TestRunner
   override:
     - javac test/TestMathSome.java test/TestRunner.java
     - java TestRunner
