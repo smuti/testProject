@@ -4,6 +4,9 @@ machine:
   java:
     version: oraclejdk7
 test:
+  pre:
+    - apt-get install junit
+    - java -cp .:/usr/share/java/junit-3.8.2.jar test/TestMathSome
   override:
     - javac test/TestMathSome.java test/TestRunner.java
     - java TestRunner
