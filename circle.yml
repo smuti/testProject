@@ -8,7 +8,7 @@ test:
     - sudo cd /usr/share/java/
     - sudo mkdir junit
     - sudo export JUNIT_HOME=/usr/share/java/junit/
-    - sudo cp junit-4.12.jar $JUNIT_HOME/junit-4.12.jar
+    - sudo cp junit-4.12.jar /usr/share/java/junit/junit-4.12.jar
     - sudo export CLASSPATH=$CLASSPATH:$JUNIT_HOME/junit4.12.jar:
 
   override:
