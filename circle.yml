@@ -5,5 +5,5 @@ machine:
     version: oraclejdk7
 test:
   override:
-      - ./bin/test.sh:
+      - ./bin/testRun.sh:
           parallel: true
